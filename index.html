@@ -5,10 +5,10 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="A marketplace to connect makers and people who need stuff made.">
+    <meta name="description" content="A platform that connects makers with anybody who needs things made.">
     <meta name="author" content="lowestdefinition">
 
-    <title>Where makers find contract work</title>
+    <title>Makers x Rest of the World</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,26 +18,28 @@
     <!-- Custom styles for this template -->
     <style>
       body {
-        padding-top: 54px;
+        padding-top: 52px;
         font-family: 'Raleway', sans-serif;
         color: #444;
+        padding-bottom: 96px;
       }
       @media (min-width: 992px) {
         body {
-          padding-top: 96px;
+          padding-top: 60px;
         }
       }
       .spacer {
-        margin: 80px 0 80px 0;
+        margin: 56px 0 56px 0;
       }
       h1 {
         text-align: center;
+        font-size: 2em;
       }
       h2 {
         font-size: 1.5em;
       }
       h3 {
-        font-size: 1.25em;
+        font-size: 1.1em;
       }
       span {
         font-size: 1em;
@@ -46,8 +48,8 @@
         width: 50%;
       }
       img {
-        width: 640px;
-        height: 480px;
+        width: 100%;
+        //height: 480px;
       }
       a {
         font-family: "PT Mono", monospace;
@@ -62,11 +64,21 @@
         text-decoration: none;
         color: #444;
       }
+      .preview {
+        text-align: center;
+        margin-bottom: 56px;
+      }
       .preview div {
         font-size: .8em;
         color: #888;
         text-align: center;
         width: 100%;
+      }
+      #description {
+        margin-top: 28px;
+      }
+      #progress-preview {
+        margin-bottom: 24px;
       }
     </style>
 
@@ -78,13 +90,34 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h1>makenext.io is currently being developed.</h1>
+          <h1>makenext.io is currently in development.</h1>
           <div class="spacer"></div>
           <div class="row">
-            <div class="col-lg-5">
-              <h2>Want to see how it's coming along?</h2>
+            <div class="col-lg-8 col-12 preview">
+              <img src="static/makenext-in-browser.png" alt=""></img>
+              <div>UX/UI prototype. Early stage work in progress.</div>
+            </div>
+            <div id="description" class="col-lg-4 col-12">
+              <h2>&raquo; So, what is it? &laquo;</h2>
+              <p>Makenext is a platform that connects makers with anybody who
+                 needs things made.</p>
+              <h3>🙋‍♀️🙋‍♂️ Makers</h3>
+              <p>Let's say you know 3D printing / CNC milling / etc. Wouldn't it
+                be nice to make some money on the side building prototypes or
+                doing tiny production runs? Create a profile and browse the gig
+                listings to find paid work you like doing.</p>
+              <h3>👔 Small businesses / Startups / Hobbyists</h3>
+              <p>The dilemma: You need a prototype or only a few items produced and
+                 the companies you contact are either way too expensive or only
+                 accept orders north of one thousand pieces. Makers can help.
+                 Create a posting and find somebody with the right skills and access to tools.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h2>&raquo; Sounds great! How's it coming along? &laquo;</h2>
               <p>Check out 👉 <a href="http://progress.makenext.io/">progress.makenext.io</a> 👈
-                for a detailed rundown of what I worked on.</p>
+                for a detailed rundown of what I have been working on.</p>
               <h3>This includes</h3>
               <ul>
                 <li>Prototypes 🕹</li>
@@ -92,12 +125,12 @@
                 <li>Design documents 📄</li>
                 <li>General commentary 💬</li>
               </ul>
-              <h3>Questions? Feedback?</h3>
-              <p>Get in touch! <a href="mailto:hi@lowestdefinition.com">hi@lowestdefinition.com</a></p>
+              <h2>&raquo; I have questions and feedback! &laquo;</h2>
+              <p>I'd love to hear from you. Please get in touch! <a href="mailto:hi@lowestdefinition.com">hi@lowestdefinition.com</a></p>
             </div>
-            <div class="col-lg-7 preview">
-              <img src="static/makenext-in-browser.png" alt=""></img>
-              <div>UX/UI prototype. Early stage work in progress.</div>
+            <div class="col-lg-6 col-12 preview">
+              <img id="progress-preview" src="static/preview-progress.png" alt=""></img>
+              <div>A nice little timeline.</div>
             </div>
           </div>
         </div>
