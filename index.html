@@ -27,8 +27,11 @@
           padding-top: 60px;
         }
       }
-      .spacer {
+      div.spacer {
         margin: 56px 0 56px 0;
+      }
+      span.spacer {
+        margin: 0 8px 0 8px;
       }
       h1 {
         text-align: center;
@@ -77,8 +80,16 @@
       .qa-block {
         margin-bottom: 32px;
       }
+      .qa-block a {
+        margin-left: 8px;
+        margin-right: 8px;
+      }
       #progress-preview {
         margin-bottom: 24px;
+      }
+      #progress-pitch a::before {
+        content: "👉";
+        margin-right: 4px;
       }
       .indicates-required {
         font-size: .8em;
@@ -141,9 +152,9 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-6 qa-block">
-              <h2>&raquo; Sounds great! How's it coming along? &laquo;</h2>
-              <p>Check out 👉 <a href="http://progress.makenext.io/">progress.makenext.io</a>
+            <div id="progress-pitch" class="col-lg-5 qa-block">
+              <h2>&raquo; Cool! How's it coming along? &laquo;</h2>
+              <p>Check out <a href="http://progress.makenext.io/">progress.makenext.io</a>
                 for a detailed rundown of what I have been working on.</p>
               <h3>This includes</h3>
               <ul>
@@ -153,13 +164,9 @@
                 <li>General commentary 💬</li>
               </ul>
             </div>
-            <div class="col-lg-6 preview">
+            <div class="col-lg-7 preview">
               <a href="http://progress.makenext.io/"><img id="progress-preview" src="static/preview-progress.png" alt=""></img></a>
               <div>A nice little timeline.</div>
-            </div>
-            <div class="col-lg-6 qa-block">
-              <h2>&raquo; I have questions and feedback! &laquo;</h2>
-              I'd love to hear from you. Please get in touch! <a href="mailto:hi@lowestdefinition.com">hi@lowestdefinition.com</a>
             </div>
           </div>
           <!-- Begin MailChimp Signup Form -->
@@ -170,11 +177,11 @@
             Oh, sure. Will do! Just enter your name and email address below. 👇
             <div class="input-fields row justify-contents-center">
               <div class="mc-field-group col-lg-4">
-              	<label for="mce-FNAME">First Name </label>
+              	<label for="mce-FNAME">Your Name </label>
               	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
               </div>
               <div class="mc-field-group col-lg-5">
-              	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+              	<label for="mce-EMAIL">Your Email  <span class="asterisk">*</span></label>
               	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
               </div>
             	<div id="mce-responses" class="clear">
@@ -189,6 +196,12 @@
           </form>
           </div>
           <!--End mc_embed_signup-->
+          <div class="row">
+            <div id="contact" class="col qa-block">
+              <h2>&raquo; I have questions or feedback or both! &laquo;</h2>
+              I'd love to hear from you. Drop me a mail <a href="mailto:hi@lowestdefinition.com">hi@lowestdefinition.com</a> or tweet at <a href="https://twitter.com/lowestdef" target="_blank">@lowestdefinition</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
